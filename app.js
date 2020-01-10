@@ -210,7 +210,7 @@ function makeHtml() {
   });
   page += `</body></html>`;
 
-  fs.writeFile("newfile.html", page, function(err) {
+  fs.writeFile("team.html", page, function(err) {
     if (err) throw err;
     console.log("Saved!");
   });
