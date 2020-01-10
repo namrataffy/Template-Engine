@@ -186,8 +186,11 @@ function makeHtml() {
     width:33%;
     float: left;
   }
+  h1{
+    text-align:center;
+  }
   </style>
-  <h1> Team</h1>`;
+  <h1 > Your Team!</h1>`;
   people.forEach(people => {
     let peopleinfo = `<div class="card  cardSmall">
     <div class="card-header text-white bg-primary ">
@@ -200,7 +203,6 @@ function makeHtml() {
             <li class="list-group-item font-weight-bold">ID: ${people.id}</li>
             <li class="list-group-item font-weight-bold">Email: <a href="${people.email}">${people.email}</a></li>
             <li class="list-group-item font-weight-bold">${people.specific}</li>
-
         </ul>
     </div>
     </div>`;
